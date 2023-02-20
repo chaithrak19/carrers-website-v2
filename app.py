@@ -30,7 +30,7 @@ JOBS = [
 ]
 @app.route("/")
 def hello_jovian():
-    return render_template('home.html',jobs=JOBS)
+    return render_template('home.html',jobs=JOBS,company_name='jovian')
 
 @app.route("/api/jobs")
 def list_jobs():
